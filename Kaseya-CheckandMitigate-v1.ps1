@@ -19,7 +19,7 @@ Please ensure that the disclaimer is read and understood before execution!
 
  .DISCLAIMER
  Any of use of this script should be performed by qualified professionals with the necessary knowledge and skills to make independent conclusions.
- The script does not guarantee or in any way ensure, promise or indicate that after successfull execution, a system can be declared as safe.
+ The script does not guarantee or in any way ensure, promise or indicate that after successful execution, a system can be declared as safe.
  The script should be used as a tool to help identify indicators of compromise in prefined locations as detailed within this script.
 
 
@@ -34,7 +34,7 @@ Please ensure that the disclaimer is read and understood before execution!
 #
 
 #
-# Rename transcrip tfile to match status, "[Hostname]_[Status]_[TimeStamp].txt"
+# Rename transcript file to match status, "[Hostname]_[Status]_[TimeStamp].txt"
 # Hostname = Hostname of the machine
 # Status can be:
 # Transcript = The name when running
@@ -80,7 +80,7 @@ Start-Transcript -Path "$WorkPath\$($HostName)_Transcript_$TimeStamp.txt" -NoClo
 
 # DISCLAIMER
 Write-Host "Any of use of this script should be performed by qualified professionals with the necessary knowledge and skills to make independent conclusions.
-The script does not guarantee or in any way ensure, promise or indicate that after successfull execution, a system can be declared as safe or unaffected.
+The script does not guarantee or in any way ensure, promise or indicate that after successful execution, a system can be declared as safe or unaffected.
 The script should be used as a tool to help identify indicators of compromise in prefined locations as detailed within this script."
 
 # Validate that the user understands that files will be deleted and processes stopped
