@@ -26,6 +26,7 @@ It checks for the predefined parameters as detailed in the script and nothing mo
 The script is designed to be compatible on all Windows PowerShell versions between 2 and 5. It has currently been tested on the following versions:
 - Windows 10, PowerShell version 2 and 5
 - Windows Server 2019 PowerShell version 5.1
+- Windows Server 2016 PowerShell version 5.1
 - Windows Server 2012 R2 PowerShell version 2 and 4
 
 # TODO 
