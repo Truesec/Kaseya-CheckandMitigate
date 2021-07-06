@@ -29,6 +29,8 @@ The script is designed to be compatible on all Windows PowerShell versions betwe
 - Windows Server 2016, PowerShell version 5.1
 - Windows Server 2012 R2, PowerShell 4.0
 - Windows Server 2012, PowerShell 3.0
+- Windows Server 2008 R2 with SP1, PowerShell 2.0
+- Windows Server 2008 R2, PowerShell 2.0
 
 # TODO 
 - [ ] Test more operating system and PowerShell versions
