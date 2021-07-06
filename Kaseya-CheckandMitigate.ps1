@@ -170,7 +170,7 @@ if ($null -ne $KaseyaAgents) {
                 Write-Host ""
                 Write-Host "[Color:Magenta] The file"$AgentTempPath\$FileKaseya" was found - MALICIOUS FILE FOUND" -ForegroundColor Magenta  
                 Write-Host "[Color:Yellow] Trying to stop process if running, and removing"$AgentTempPath\$FileKaseya"" -ForegroundColor Yellow
-                $Processes | Where-Object Path -EQ "$AgentTempPath\$FileKaseya" | Stop-Process -Force -Verbose -ErrorAction SilentlyContinue
+                $Processes | Where-Object {$_.Path -EQ "$AgentTempPath\$FileKaseya"} | Stop-Process -Force -Verbose -ErrorAction SilentlyContinue
                 Remove-Item -Path "$AgentTempPath\$FileKaseya" -Force -Verbose
             }
             else {
@@ -200,7 +200,7 @@ foreach ($File in $FilesToCheck) {
         Write-Host ""
         Write-Host "[Color:Magenta] The file $File was found - MALICIOUS FILE FOUND" -ForegroundColor Magenta  
         Write-Host "[Color:Yellow] Trying stop process if running, and removing $File" -ForegroundColor Yellow
-        $Processes | Where-Object Path -EQ $File | Stop-Process -Force -Verbose -ErrorAction SilentlyContinue
+        $Processes | Where-Object {$_.Path -EQ $File} | Stop-Process -Force -Verbose -ErrorAction SilentlyContinue
         Remove-Item -Path $File -Force -Verbose
     }
     else {
