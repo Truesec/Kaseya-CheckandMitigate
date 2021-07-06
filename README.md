@@ -3,6 +3,8 @@ Truesec CSIRT team is releasing a script to help victims and responders of the K
 
 This tool is intended to be used on end systems running a Kaseya Agent, not on a Kaseya VSA server.
 
+We cover details around the attack in our blog post available at: https://blog.truesec.com/2021/07/04/kaseya-supply-chain-attack-targeting-msps-to-deliver-revil-ransomware/
+
 # How to Use
 1. Start PowerShell.exe or Cmd.exe as Administrator
 2. Navigate to the location of the script
