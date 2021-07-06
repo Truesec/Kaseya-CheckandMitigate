@@ -14,7 +14,7 @@ It checks for the predefined parameters as detailed in the script and nothing mo
 # Compatibility
 The tool has been tested on the following versions:
 - Windows 10, PowerShell version 2 and 5
-- Windows Server 2012 R2 version 2 and 4
+- Windows Server 2012 R2 PowerShell version 2 and 4
 
 # TODO 
 - [ ] Test more operating system and PowerShell versions
