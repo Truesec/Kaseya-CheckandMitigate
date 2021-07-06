@@ -28,4 +28,6 @@ The script is designed to be compatible on all PowerShell versions between 2 and
 # TODO 
 - [ ] Test more operating system and PowerShell versions
 - [ ] Change hardcoded path "C:\" to $env:SystemDrive
+- [ ] Add checks for malicious PowerShell execution in local event log
+- [ ] Add checks for malicious execution in AgentMon log
 - [ ] Implement option to only check for indicators of compromise, but not remove anything
