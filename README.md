@@ -27,10 +27,15 @@ The script is designed to be compatible on all Windows PowerShell versions betwe
 - Windows 10, PowerShell version 5.1
 - Windows Server 2019, PowerShell version 5.1
 - Windows Server 2016, PowerShell version 5.1
-- Windows Server 2012 R2, PowerShell 4.0
+- Windows Server 2012 R2, PowerShell 4.0 - See Known Issues section
 - Windows Server 2012, PowerShell 3.0
 - Windows Server 2008 R2 with SP1, PowerShell 2.0
 - Windows Server 2008 R2, PowerShell 2.0
+
+# Known Issues
+PowerShell 4.0 have a few builds that have a confirmed bug with Start-Transcript, this was noticed during testing of Windows Server 2012 R2 where the rename of the Transcript file did not reflect the indications found.
+
+Work around: Update PowerShell to a later build or major version.
 
 # TODO 
 - [ ] Test more operating system and PowerShell versions
@@ -38,3 +43,4 @@ The script is designed to be compatible on all Windows PowerShell versions betwe
 - [ ] Add checks for malicious PowerShell execution in local event log
 - [ ] Add checks for malicious execution in AgentMon log
 - [ ] Implement option to only check for indicators of compromise, but not remove anything
+- [ ] Implement log and report function
