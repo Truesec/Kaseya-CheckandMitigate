@@ -35,7 +35,10 @@ The script is designed to be compatible on all Windows PowerShell versions betwe
 # Known Issues
 PowerShell 4.0 have a few builds that have a confirmed bug with Start-Transcript, this was noticed during testing of Windows Server 2012 R2 where the rename of the Transcript file did not reflect the indications found.
 
+- Issue verified on Windows Server 2012 R2, PowerShell Version 4.0 Build 6.3.9600.17400
+
 Work around: Update PowerShell to a later build or major version.
+- Work around verified on Windows Server 2012 R2, PowerShell Version 4.0 Build 6.3.9600.18773
 
 # TODO 
 - [ ] Test more operating system and PowerShell versions
